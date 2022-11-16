@@ -5,8 +5,9 @@
   </header>
 
   <%if enhanced_cart.length == 0 %>
-  <h2> Your cart is empty! </h2>
-   <a class="navbar-brand" href="<%= root_path %>"> Take me Home</a>
+  <h2 class="alert alert-info"> Your cart is empty!
+  <%= link_to 'Back', :root %> 
+  </h2>
   <%else%>
     <div class="panel panel-default items">
       <table class="table table-bordered">
