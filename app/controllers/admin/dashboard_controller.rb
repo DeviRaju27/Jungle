@@ -7,3 +7,4 @@ class Admin::DashboardController < ApplicationController
     @categories_count = Category.count
   end
 end
+
