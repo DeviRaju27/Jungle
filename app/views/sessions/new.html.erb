@@ -2,6 +2,10 @@
 <h1>User &raquo; Login</h1>
 </header>
 
+<% if  flash[:notice] %>
+<%= flash[:notice] %>
+<% end %>
+
 <%= form_tag '/login' ,{ class: "custom-form"} do %>
 
   Email: <%= text_field_tag :email %>

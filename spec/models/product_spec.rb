@@ -4,16 +4,16 @@ RSpec.describe Product, type: :model do
   describe 'Validations' do
 
     it 'is valid with all attributes' do
-    @category = Category.new
-    params = {
-      name: 'dev',
-      description: 'description',
-      quantity: 5,
-      category: @category,
-      price_cents: 1000
+      @category = Category.new
+      params = {
+        name: 'dev',
+        description: 'description',
+        quantity: 5,
+        category: @category,
+        price_cents: 1000
     }
     expect(Product.new(params)).to be_valid
-  end
+    end
 
     it 'is not valid without name ' do
       @category = Category.new
