@@ -2,6 +2,29 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Implemented Features
+
+1. Sold Out Badge
+-  When a product has 0 quantity, a sold out badge should be displayed on the product list page
+2. Admin Categories
+ - Admin users can list and create new categories
+ - Admins can add new products using the new category
+3. User Authentication
+- As a Visitor I can go to the registration page from any page in order to create an account
+-  As a Visitor I can sign up for a user account with my e-mail, password, first name and last name
+- As a Visitor I can sign in using my e-mail and password
+- As a User I can log out from any page
+- As a User I cannot sign up with an existing e-mail address (uniqueness validation)
+- Passwords are not stored as plain text in the database. Instead, has_secure_password is used in the User model, leveraging the bcrypt gem
+4. Order Details Page
+-  The order page contains items, their image, name, description, quantities and line item totals
+- The final amount for the order is displayed
+- The email that was used to place the order is displayed
+5. Missing Admin Security
+- User must enter HTTP auth login/password to access admin functionality
+6. Checking Out with Empty Cart
+- When the cart is empty and the user goes to the carts#show page, instead of displaying the contents and a stripe checkout button, display a friendly message about how it is empty and link to the home page
+
 ## Setup
 
 1. Run `bundle install` to install dependencies

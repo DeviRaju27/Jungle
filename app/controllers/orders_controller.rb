@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
 
     if order.valid?
       empty_cart!
-      redirect_to order, notice: 'Your Order has been placed.'
+      redirect_to order
     else
       redirect_to cart_path, flash: { error: order.errors.full_messages.first }
     end
@@ -21,7 +21,7 @@ class OrdersController < ApplicationController
 
   private
 
-  def empty_cart!
+  def empty_cart! 
     # empty hash means no products in cart :)
     update_cart({})
   end
@@ -30,7 +30,7 @@ class OrdersController < ApplicationController
     Stripe::Charge.create(
       source:      params[:stripeToken],
       amount:      cart_subtotal_cents,
-      description: "Dev's Jungle Order",
+      description: "Your Jungle Order",
       currency:    'cad'
     )
   end
@@ -55,5 +55,7 @@ class OrdersController < ApplicationController
     order.save!
     order
   end
+
+
 
 end

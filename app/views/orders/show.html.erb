@@ -6,7 +6,13 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
-    <p>Email you used for this purchase: <%= @order.email %></p>
+   
+    <%if current_user %>
+    <p>Email you used for this purchase: 
+    <%= current_user.email %>
+    </p>
+    <% end %>
+ 
   </div>
   <div class="panel panel-default items">
   <table class="table table-bordered">
