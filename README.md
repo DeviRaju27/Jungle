@@ -54,4 +54,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Stripe
 
 ## Screenshots
-[Sold Out Badge]()
+![Sold Out Badge](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/Sold-out-badge.png)
+![Cart as a Visitor](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/Cart-as-a-visitor.png)
+![Stripe Payment Window](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/Stripe-payment.png)
+![Order Confirmation for Registered Users](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/order-confirmation.jpeg)
+![Admin All Products](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/admin-products.png)
+![Admin New Product Form](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/admin-new-product.png)
+![Admin New Category Form](https://github.com/DeviRaju27/Jungle/blob/master/public/uploads/admin-new-category.png)
+
